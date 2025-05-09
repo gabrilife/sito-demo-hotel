@@ -1,0 +1,179 @@
+ <!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Paradiso</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; line-height: 1.6; background: #ffffff; color: #16888b; }
+        header { background: url('hero.jpg') center/cover no-repeat; height: 100vh; position: relative; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; position: absolute; width: 100%; top: 0; }
+        nav .logo { color: #16888b; font-size: 1.8rem; font-weight: 600; text-decoration: none; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin-left: 30px; }
+        nav ul li a { color: #16888b; text-decoration: none; font-weight: 500; }
+        .hero-content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #16888b; text-align: center; }
+        .hero-content h1 { font-size: 3.5rem; margin-bottom: 20px; }
+        .hero-content p { font-size: 1.2rem; margin-bottom: 30px; }
+        .hero-content a { background: #16888b; padding: 15px 30px; color: #ffffff; text-decoration: none; font-weight: 600; border-radius: 4px; }
+        section { padding: 80px 50px; }
+        .section-title { text-align: center; margin-bottom: 50px; font-size: 2rem; font-weight: 600; }
+        .rooms, .services, .gallery, .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; background: #ffffff; }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .card-content h3 { margin-bottom: 10px; font-size: 1.3rem; }
+        .card-content p { font-size: 0.95rem; margin-bottom: 15px; }
+        .card-content a { color: #16888b; text-decoration: none; font-weight: 600; }
+        .testimonials .card-content { background: #f9f9f9; }
+        footer { background: #ffffff; color: #16888b; padding: 40px 50px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+        footer .footer-section { flex: 1 1 200px; margin-bottom: 20px; }
+        footer h4 { margin-bottom: 20px; font-size: 1.2rem; color: #16888b; }
+        footer p, footer a { color: #16888b; font-size: 0.9rem; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#" class="logo">Hotel Paradiso</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#camere">Camere</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#galleria">Galleria</a></li>
+            <li><a href="#recensioni">Recensioni</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+        </ul>
+    </nav>
+    <div class="hero-content" id="home">
+        <h1>Benvenuti al Paradise</h1>
+        <p>Il vostro rifugio di comfort e lusso nel cuore della città.</p>
+        <a href="#contatti">Prenota Ora</a>
+    </div>
+</header>
+
+<section id="camere">
+    <h2 class="section-title">Le Nostre Camere</h2>
+    <div class="rooms">
+        <div class="card">
+            <img src="camera_standard.jpg" alt="Camera Standard">
+            <div class="card-content">
+                <h3>Camera Standard</h3>
+                <p>Accogliente e funzionale, perfetta per il viaggiatore singolo o in coppia.</p>
+                <a href="#contatti">Scopri di più</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="camera_deluxe.jpg" alt="Camera Deluxe">
+            <div class="card-content">
+                <h3>Camera Deluxe</h3>
+                <p>Spazio extra e vista panoramica per rendere indimenticabile il vostro soggiorno.</p>
+                <a href="#contatti">Scopri di più</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="suite_luxury.jpg" alt="Suite Luxury">
+            <div class="card-content">
+                <h3>Suite Luxury</h3>
+                <p>Elegante design, comfort superiore e servizi esclusivi.</p>
+                <a href="#contatti">Scopri di più</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="servizi">
+    <h2 class="section-title">I Nostri Servizi</h2>
+    <div class="services">
+        <div class="card">
+            <img src="piscina.jpg" alt="Piscina">
+            <div class="card-content">
+                <h3>Piscina Panoramica</h3>
+                <p>Rilassatevi nella nostra piscina con vista mozzafiato sulla città.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="spa.jpg" alt="Spa">
+            <div class="card-content">
+                <h3>Spa & Benessere</h3>
+                <p>Trattamenti esclusivi per rinvigorire corpo e mente.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="ristorante.jpg" alt="Ristorante">
+            <div class="card-content">
+                <h3>Ristorante Gourmet</h3>
+                <p>Cucina locale e internazionale con ingredienti a km 0.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="galleria">
+    <h2 class="section-title">Galleria Fotografica</h2>
+    <div class="gallery">
+        <div class="card"><img src="gallery1.jpg" alt=""></div>
+        <div class="card"><img src="gallery2.jpg" alt=""></div>
+        <div class="card"><img src="gallery3.jpg" alt=""></div>
+        <div class="card"><img src="gallery4.jpg" alt=""></div>
+    </div>
+</section>
+
+<section id="recensioni">
+    <h2 class="section-title">Recensioni dei Clienti</h2>
+    <div class="testimonials">
+        <div class="card">
+            <div class="card-content">
+                <p>"Esperienza fantastica! Staff cordiale e location meravigliosa."</p>
+                <h3>– Maria Rossi</h3>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <p>"La suite luxury è stata il top del nostro viaggio! Torneremo senz'altro."</p>
+                <h3>– Luca Bianchi</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contatti">
+    <h2 class="section-title">Contattaci</h2>
+    <form action="#" style="max-width:600px; margin:0 auto; display:flex; flex-direction:column;">
+        <input type="text" name="nome" placeholder="Nome" required style="padding:15px; margin-bottom:20px; border:1px solid #ccc; border-radius:4px;">
+        <input type="email" name="email" placeholder="Email" required style="padding:15px; margin-bottom:20px; border:1px solid #ccc; border-radius:4px;">
+        <textarea name="messaggio" rows="5" placeholder="Messaggio" required style="padding:15px; margin-bottom:20px; border:1px solid #ccc; border-radius:4px;"></textarea>
+        <button type="submit" style="padding:15px; background:#16888b; color:#fff; border:none; border-radius:4px; font-weight:600; cursor:pointer;">Invia</button>
+    </form>
+</section>
+
+<footer>
+    <div class="footer-section">
+        <h4>Hotel Paradiso</h4>
+        <p>Via Roma 123, 00100 Roma (RM)</p>
+        <p>Tel: +39 06 1234567</p>
+        <p>Email: info@hotelparadiso.it</p>
+    </div>
+    <div class="footer-section">
+        <h4>Seguici</h4>
+        <a href="#">Facebook</a><br>
+        <a href="#">Instagram</a><br>
+        <a href="#">Twitter</a>
+    </div>
+    <div class="footer-section">
+        <h4>Orari</h4>
+        <p>Check-in: dalle 14:00</p>
+        <p>Check-out: entro le 11:00</p>
+    </div>
+</footer>
+
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="IiyFCOHjFfIBiRw53nmgP";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+
+</body>
+</html>
